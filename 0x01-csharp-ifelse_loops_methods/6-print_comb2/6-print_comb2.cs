@@ -19,7 +19,7 @@ namespace _6_print_comb2
                         }
                         else
                         {
-                            Console.Write($"{a}{b}");
+                            Console.WriteLine($"{a}{b}");
                         }
                     }
                 }
