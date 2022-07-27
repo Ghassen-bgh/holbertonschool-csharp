@@ -17,7 +17,7 @@
             else
             {
                 int[] newArray = new int[size];
-                for (int i = 0; i < newArray.Length; i++)
+                for (int i = 0; i < size; i++)
                 {
                     newArray[i] = i;
                     if (i < size - 1)
