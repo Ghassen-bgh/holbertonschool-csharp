@@ -5,4 +5,5 @@ for i in "${my_array[@]}"
 do
 dotnet new console --language "C#" --output "$i"
 mv "$i"/"Program".cs "$i"/"$i".cs
+sed -i '5 i <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\$(AssemblyName).xml</DocumentationFile>' "$i"/"$i".csproj
 done
