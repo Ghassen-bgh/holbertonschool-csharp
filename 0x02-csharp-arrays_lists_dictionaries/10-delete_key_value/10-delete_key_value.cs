@@ -7,13 +7,10 @@ using System.Collections.Generic;
         public static Dictionary<string, string> DeleteKeyValue(Dictionary<string, string> myDict, string key)
         {
             Dictionary<string, string> newDict = new Dictionary<string, string>();
-            foreach (KeyValuePair<string, string> kvp in myDict)
+            if (myDict.ContainsKey(key))
             {
-                if (kvp.Key != key)
-                {
-                    newDict.Add(kvp.Key, kvp.Value);
-                }
+                myDict.Remove(key);
             }
-            return newDict;
+            return myDict;
         }
     }
