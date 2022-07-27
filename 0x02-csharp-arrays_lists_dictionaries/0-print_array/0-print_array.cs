@@ -11,7 +11,7 @@
             }
             else if (size < 0)
             {
-                Console.WriteLine("Size cannot be negative");
+                Console.Write("Size cannot be negative");
                 return null;
             }
             else
@@ -23,7 +23,7 @@
                     if (i < size - 1)
                         Console.Write(newArray[i] + " ");
                     else
-                        Console.WriteLine(newArray[i]);
+                        Console.Write(newArray[i]);
                 }
                 Console.WriteLine();
                 return newArray;
