@@ -11,7 +11,7 @@
             }
             else if (size < 0)
             {
-                Console.Write("Size cannot be negative");
+                Console.WriteLine("Size cannot be negative");
                 return null;
             }
             else
