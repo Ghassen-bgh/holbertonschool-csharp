@@ -6,7 +6,7 @@ using System.Collections.Generic;
     {
         public static Stack<string> Info(Stack<string> aStack, string newItem, string search)
         {
-            Console.WriteLine("Number of items: {0}", aStack.Count);
+            Console.WriteLine($"Number of items: {aStack.Count}");
             if (aStack.Count == 0)
             {
                 Console.WriteLine("Stack is empty");
@@ -14,15 +14,15 @@ using System.Collections.Generic;
             }
             else
             {
-                Console.WriteLine("Top item: {0}", aStack.Peek());
+                Console.WriteLine($"Top item: {aStack.Peek()}");
                 if (aStack.Contains(search))
                 {
-                   Console.WriteLine("Stack contains \"{0}\"" + ": True", search);
+                   Console.WriteLine($"Stack contains \"{search}\": {aStack.Contains(search)}");
 
                 }
                 else
                 {
-                    Console.WriteLine("Stack contains \"{0}\"" + ": False", search);
+                    Console.WriteLine($"Stack contains \"{search}\": {aStack.Contains(search)}");
                     return aStack;
                 }
                     while (aStack.Contains(search))
