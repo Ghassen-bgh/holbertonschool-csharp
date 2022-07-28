@@ -12,12 +12,12 @@ using System.Collections.Generic;
                 return myLList.First;
             }
             LinkedListNode<int> current = myLList.First;
-            while(current.Next != null)
+            while(current != null)
             {
                 if(n <= current.Value)
                 {
                     myLList.AddBefore(current, n);
-                    return current;
+                    return current.Previous;
                 }
                 if(current.Next != null)
                     current = current.Next;
