@@ -14,15 +14,22 @@ using System.Collections.Generic;
             LinkedListNode<int> current = myLList.First;
             while(current.Next != null)
             {
-                if(current.Value < n && current.Next.Value > n)
+                if(n <= current.Value)
                 {
-                    myLList.AddAfter(current, n);
-                    return current.Next;
+                    myLList.AddBefore(current, n);
+                    return current;
                 }
-                current = current.Next;
+                if(current.Next != null)
+                {
+                    current = current.Next;
+                }
+                else
+                {
+                    myLList.AddLast(n);
+                    return current;
+                }
             }
-            myLList.AddAfter(current, n);
-            return current.Next;
-        }
+            return current;
+    }
     }
 
