@@ -20,14 +20,10 @@ using System.Collections.Generic;
                     return current;
                 }
                 if(current.Next != null)
-                {
                     current = current.Next;
-                }
                 else
-                {
-                    myLList.AddLast(n);
-                    return current;
-                }
+                break;
+
             }
             return current;
     }
