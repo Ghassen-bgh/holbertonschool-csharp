@@ -7,13 +7,13 @@ using System.Collections.Generic;
         public static Queue<string> Info(Queue<string> aQueue, string newItem, string search)
         {
             Console.WriteLine($"Number of items: {aQueue.Count}");
-            if (aQueue.Count == 0)
+            if (aQueue.Count != 0)
             {
-                Console.WriteLine("Queue is empty");
-                Console.WriteLine($"Queue contains \"{search}\": {aQueue.Contains(search)}");
+                Console.WriteLine($"First item: {aQueue.Peek()}");
+                
             }
             else
-                Console.WriteLine($"First item: {aQueue.Peek()}");
+                Console.WriteLine("Queue is empty");
             Console.WriteLine($"Queue contains \"{search}\": {aQueue.Contains(search)}");
             while (aQueue.Contains(search))
             {
