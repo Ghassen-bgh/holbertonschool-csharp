@@ -6,12 +6,16 @@ using System.Collections.Generic;
     {
         public static void Delete(LinkedList<int> myLList, int index)
         {
-            LinkedListNode<int> current = myLList.First;
-            for (int i = 0; i < index; i++)
+            int i = 0;
+            foreach(int n in myLList)
             {
-                current = current.Next;
+                if(i == index)
+                {
+                    myLList.Remove(myLList.Find(n));
+                    break;
+                }
+                i++;
             }
-            myLList.Remove(current);
         }
     }
 
