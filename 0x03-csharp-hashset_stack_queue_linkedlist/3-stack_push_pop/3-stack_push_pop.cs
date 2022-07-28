@@ -13,9 +13,9 @@ using System.Collections.Generic;
                 Console.WriteLine($"Stack contains \"{search}\": {aStack.Contains(search)}");
             }
             else
-            {
+            
                 Console.WriteLine($"Top item: {aStack.Peek()}");
-            } 
+            
             Console.WriteLine($"Stack contains \"{search}\": {aStack.Contains(search)}");
 
             while (aStack.Contains(search))
