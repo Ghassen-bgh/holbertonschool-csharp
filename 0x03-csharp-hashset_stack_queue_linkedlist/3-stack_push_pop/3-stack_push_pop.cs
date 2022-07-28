@@ -10,27 +10,20 @@ using System.Collections.Generic;
             if (aStack.Count == 0)
             {
                 Console.WriteLine("Stack is empty");
-                return aStack;
+                Console.WriteLine($"Stack contains \"{search}\": {aStack.Contains(search)}");
             }
             else
             {
                 Console.WriteLine($"Top item: {aStack.Peek()}");
-                if (aStack.Contains(search))
-                {
-                   Console.WriteLine($"Stack contains \"{search}\": {aStack.Contains(search)}");
+            } 
+            Console.WriteLine($"Stack contains \"{search}\": {aStack.Contains(search)}");
 
-                }
-                else
-                {
-                    Console.WriteLine($"Stack contains \"{search}\": {aStack.Contains(search)}");
-                    return aStack;
-                }
-                    while (aStack.Contains(search))
-                   {
-                        aStack.Pop();
-                   }
+            while (aStack.Contains(search))
+            {
+                aStack.Pop();
+            }
                 aStack.Push(newItem);
                 return aStack;
-            }
         }
     }
+    
