@@ -13,7 +13,7 @@ using System.Collections.Generic;
                 Console.WriteLine($"Queue contains \"{search}\": {aQueue.Contains(search)}");
             }
             else
-                Console.WriteLine($"Top item: {aQueue.Peek()}");
+                Console.WriteLine($"First item: {aQueue.Peek()}");
             Console.WriteLine($"Queue contains \"{search}\": {aQueue.Contains(search)}");
             while (aQueue.Contains(search))
             {
