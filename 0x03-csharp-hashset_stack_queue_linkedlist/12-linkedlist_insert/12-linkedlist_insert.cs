@@ -6,17 +6,23 @@ using System.Collections.Generic;
     {
         public static LinkedListNode<int> Insert(LinkedList<int> myLList, int n)
         {
-            LinkedListNode<int> current = myLList.First;
-            while (current != null)
+            if(myLList.Count == 0)
             {
-                if (current.Value > n)
+                myLList.AddFirst(n);
+                return myLList.First;
+            }
+            LinkedListNode<int> current = myLList.First;
+            while(current.Next != null)
+            {
+                if(current.Value < n && current.Next.Value > n)
                 {
-                    break;
+                    myLList.AddAfter(current, n);
+                    return current.Next;
                 }
                 current = current.Next;
             }
-            LinkedListNode<int> newNode = myLList.AddBefore(current, n);
-            return newNode;
+            myLList.AddAfter(current, n);
+            return current.Next;
         }
     }
 
