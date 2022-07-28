@@ -6,15 +6,12 @@ using System.Collections.Generic;
     {
         public static int Pop(LinkedList<int> myLList)
         {
-            int popped = myLList.First.Value;
             if (myLList.Count == 0)
             {
                 return 0;
             }
-            else
-            {
+            int popped = myLList.First.Value;
                 myLList.RemoveFirst();
-            }
             return popped;
         }
     }
