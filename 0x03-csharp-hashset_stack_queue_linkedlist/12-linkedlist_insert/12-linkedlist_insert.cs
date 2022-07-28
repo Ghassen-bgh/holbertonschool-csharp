@@ -22,9 +22,10 @@ using System.Collections.Generic;
                 if(current.Next != null)
                     current = current.Next;
                 else
-                break;
+                    break;
 
             }
+            myLList.AddAfter(current, n);
             return current;
     }
     }
