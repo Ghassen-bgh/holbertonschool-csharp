@@ -11,7 +11,10 @@ using System.Collections.Generic;
             {
                 return 0;
             }
-            myLList.RemoveFirst();
+            else
+            {
+                myLList.RemoveFirst();
+            }
             return popped;
         }
     }
