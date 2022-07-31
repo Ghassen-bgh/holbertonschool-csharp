@@ -7,7 +7,7 @@ using System.Collections.Generic;
         public static string BestScore(Dictionary<string, int> myList)
         {
             string best = "None";
-            int bestScore = 0;
+            int bestScore = int.MinValue;
             foreach (KeyValuePair<string, int> entry in myList)
             {
                 if (entry.Value > bestScore)
