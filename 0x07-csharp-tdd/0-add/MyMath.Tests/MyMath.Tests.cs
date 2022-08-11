@@ -16,10 +16,10 @@ namespace MyMath.Tests
         [TestCase(10, 0)]
         [TestCase(20, -10)]
 
-        public void Add(int a, int b)
+        public void Addition(int a, int b)
         {
-            int sum = MyMath.Operations.Add(a, b);
-            Assert.AreEqual(a + b, sum);
+            var sum = MyMath.Operations.Add(a, b);
+            Assert.AreEqual(10, sum);
         }
     }
 }
