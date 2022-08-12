@@ -5,7 +5,7 @@ namespace MyMath
     /// <summary>
     /// Mathematical operations.
     /// </summary>
-    class Operations
+    public class Operations
     {
         /// <summary>
         /// Add two integers.
