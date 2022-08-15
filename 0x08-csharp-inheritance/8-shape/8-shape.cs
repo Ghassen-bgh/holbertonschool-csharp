@@ -59,7 +59,10 @@ using System.Reflection;
         {
             return String.Format("[Rectangle] {0} / {1}", width, height);
         }
-        class Square : Rectangle
+
+    }
+
+    class Square : Rectangle
         {
             private int size;
             public int Size
@@ -77,10 +80,9 @@ using System.Reflection;
                     else
                     {
                         size = value;
-                        base.width = value;
-                        base.height = value;
+                        base.Height = value;
+                        base.Width = value;
                     }
                 }
             }
         }
-    }
