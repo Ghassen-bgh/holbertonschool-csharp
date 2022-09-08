@@ -8,7 +8,7 @@
             double[,] result = new double[,] {{-1}};
             int rows = matrix1.GetLength(0);
             int cols = matrix1.GetLength(1);
-            if (rows != matrix2.GetLength(0) || cols != matrix2.GetLength(1))
+            if (matrix1.Length != matrix2.Length || rows != matrix2.GetLength(0) || cols != matrix2.GetLength(1))
                 return result;
             result = new double[rows, cols];
             for (int i = 0; i < rows; i++)
