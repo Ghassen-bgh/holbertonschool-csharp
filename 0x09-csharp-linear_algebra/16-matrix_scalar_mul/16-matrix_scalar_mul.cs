@@ -8,7 +8,7 @@
             int rows = matrix.GetLength(0);
             int cols = matrix.GetLength(1);
             double[,] result = new double[rows, cols];
-            if (rows != cols)
+            if (matrix.Length <= 1 || rows != cols)
             {
                 return (new Double[,] { { -1 } });
             }
