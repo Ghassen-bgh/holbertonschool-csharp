@@ -37,14 +37,20 @@ public class TestObject : Base, IInteractive, IBreakable, ICollectable
 
     public void Interact()
     {
+
+        
     }
     
     public void Break()
     {
+
+
     }
 
     public void Collect()
     {
+
+
     }
 }
 
