@@ -110,7 +110,7 @@ public class Player
             Newhp = hp + heal;
             Console.WriteLine("{0} heals {1} HP!", name, heal);
         }
-
+        ValidateHP(Newhp);
     }
 
     /// <summary>
@@ -150,9 +150,13 @@ public class Player
         {
             return baseValue;
         }
-        else
+        else if (modifier == Modifier.Strong)
         {
             return baseValue * 1.5f;
+        }
+        else
+        {
+            return baseValue;
         }
     }
 
